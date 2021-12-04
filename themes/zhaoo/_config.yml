@@ -82,13 +82,13 @@ copyright: <p> Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  | 
 # Social
 social:
   qq: tencent://message/?Menu=yes&uin=1789139001 || iconQQ || '#12B7F5'
-  wechat: /images/wechat.jpg || iconwechat-fill || '#09BB07'
+  wechat: /images/contact/wechat.jpg || iconwechat-fill || '#09BB07'
   instagram: https://cherry-white.github.io/ || iconinstagram || '#DA2E76'
   github: https://gitee.com/zj1789139001 || icongithub-fill || '#9f7be1'
   email: mailto:1789139001@qq.com || iconmail
 # Override Scrollbar
 scrollbar:
-  type: default # default | simple | normal | none
+  type: simple # default | simple | normal | none
 
 # Fab (Float Action Button)
 fab:
@@ -149,8 +149,8 @@ toc:
 # Donate
 donate:
   enable: true
-  alipay: /images/alipay.png
-  wechat: /images/wechatPay.png
+  alipay: /images/pay/alipay.png
+  wechat: /images/pay/wechat.png
 
 # Copyright
 post_copyright:

@@ -1,5 +1,6 @@
 ---
 title: Hexo 搭建静态博客
+date: 2021-12-04 11:22:50
 tags: [Hexo, 主题]  #设置标签
 categories:  #设置分类
 - 博客
@@ -58,6 +59,14 @@ $ hexo deploy
 
 ``` bash
 $ git clone https://github.com/zhaoo/hexo-theme-zhaoo.git themes/zhaoo
+```
+
+### 使用
+
+修改 Hexo 根目录下的 _config.yml 文件启用 zhaoo 主题
+
+```yml
+theme: zhaoo
 ```
 
 具体使用方式：[查看](https://github.com/zhaoo/hexo-theme-zhaoo)
