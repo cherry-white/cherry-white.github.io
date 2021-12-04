@@ -82,13 +82,13 @@ copyright: <p> Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  | 
 # Social
 social:
   qq: tencent://message/?Menu=yes&uin=1789139001 || iconQQ || '#12B7F5'
-  wechat: /images/wechat.jpg || iconwechat-fill || '#09BB07'
+  wechat: /images/contact/wechat.jpg || iconwechat-fill || '#09BB07'
   instagram: https://cherry-white.github.io/ || iconinstagram || '#DA2E76'
   github: https://gitee.com/zj1789139001 || icongithub-fill || '#9f7be1'
   email: mailto:1789139001@qq.com || iconmail
 # Override Scrollbar
 scrollbar:
-  type: default # default | simple | normal | none
+  type: simple # default | simple | normal | none
 
 # Fab (Float Action Button)
 fab:
@@ -121,10 +121,10 @@ gray:
 excerpt:
   enable: true
 
-# Post Image
+# Post Image 不添加封面图片时，会显示默认图片
 post_image:
   random: local # local galleries
-  default: /images/theme/post-image.jpg
+  default: /images/background/default.jpg # 设置默认封面图片
 
 # Page Size
 post_page_size:
@@ -149,8 +149,8 @@ toc:
 # Donate
 donate:
   enable: true
-  alipay: /images/alipay.png
-  wechat: /images/wechatPay.png
+  alipay: /images/pay/alipay.png
+  wechat: /images/pay/wechat.png
 
 # Copyright
 post_copyright:
