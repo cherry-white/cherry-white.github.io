@@ -179,17 +179,17 @@ galleries:
 # --------------------------------------------------
 
 comments:
-  enable: false
-  type: valine # gitalk | valine | changyan
+  enable: true
+  type: gitalk # gitalk | valine | changyan
   button: true
 
 # Gitalk
 gitalk:
-  owner:
-  repo:
-  admin:
-  clientID:
-  clientSecret:
+  owner: cherry-white
+  repo: cherry-white.github.io
+  admin: ['cherry-white']
+  clientID: 5d2553717eea46759e10
+  clientSecret: 4d93ce39e65dd2c5b9e364f75d06efd73c64a8ba
 
 # Valine
 valine:

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "string": "hexo s",
+    "start": "hexo s",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
@@ -13,6 +13,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
+    "gitalk": "^1.7.2",
     "hexo": "^5.0.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
