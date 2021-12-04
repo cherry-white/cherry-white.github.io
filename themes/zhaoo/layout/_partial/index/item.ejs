@@ -10,19 +10,21 @@
     </a>
     <div class="post-content">
       <div class="post-content-wrap">
-        <h3 class="post-title"><a href="<%- url_for(post.path) %>" title="<%= post.title %>" ><%= post.title %></a></h3>
+        <h3 class="post-title"><a href="<%- url_for(post.path) %>" title="<%- post.title %>" ><%- post.title %></a></h3>
         <div class="post-excerpt">
-          <p class="substr-3"><%= excerpt %></p>
+          <p class="substr-3"><%- excerpt %></p>
         </div>
       </div>
       <div class="post-info">
         <span class="post-info-item"><i class="iconfont iconcalendar"></i><%= date(post.date, "MMMM DD, YYYY") %></span>
         <% if (theme.leancloud.enable) { %>
           <span class="post-info-item">
-            <i class="iconfont iconeye"></i><span id="<%= url_for(post.path) %>" class="leancloud" data-flag-title="<%- post.title %>"></span>
+            <i class="iconfont iconeye"></i><span id="<%= url_for(post.path) %>" class="leancloud-counter" data-flag-title="<%- post.title %>"></span>
+          </span>
+          <span class="post-info-item">
+            <i class="iconfont iconheart"></i><span id="<%= url_for(post.path) %>" class="leancloud-like" data-flag-title="<%- post.title %>"></span>
           </span>
         <% } %>
-        <span class="post-info-item"><i class="iconfont iconfont-size"></i><%= strip_html(post.content).length %></span>
       </div>
     </div>
   </div>

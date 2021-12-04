@@ -1,8 +1,9 @@
 {
-  "name": "hexo-site",
+  "name": "my-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "string": "hexo s",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
