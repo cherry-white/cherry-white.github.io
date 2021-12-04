@@ -1,0 +1,13 @@
+[
+  {
+    "name": "动漫",
+    "cover": "/images/background/about.jpg",
+    "description": "君未看花时，花与君同寂；君来看花日，花色一时明。",
+    "photos": [
+      "/images/background/default.jpg",
+      "/images/background/docker-maven.jpg",
+      "/images/background/about.jpg",
+      "/images/background/hello.jpg"
+    ]
+  }
+]
