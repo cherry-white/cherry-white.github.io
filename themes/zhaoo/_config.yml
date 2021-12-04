@@ -59,7 +59,7 @@ preview:
       light: /images/theme/welcome-image.jpg
       dark: /images/theme/welcome-image.jpg
     video:
-    api: # https://source.unsplash.com/random/1920x1080
+    api: https://source.unsplash.com/random/2560x1440
     size: cover # css: background-size
     position: center # css: background-position
   motto:
@@ -284,7 +284,9 @@ vendors:
 
 # Custom
 custom:
-  head:
+  # 头部埋点
+  head: <script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?3cbbee458915615f7e2e5b7a073f2113";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script>
+  # 尾部埋点
   foot:
   css:
   js:
