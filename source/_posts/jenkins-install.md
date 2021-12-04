@@ -119,7 +119,8 @@ sudo service jenkins restart
 admin -> configure 拉到下面可以修改账号密码
 
 Manage Jenkins -> Manager Plugin -> ADVANCED 
-最下面有 Update Site 设置为：https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
+最下面有 Update Site 设置为：
+https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 
 修改为中文需要安装插件 Localization: Chinese（Simplified）
 
