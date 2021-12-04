@@ -19,7 +19,32 @@ com.spotify.docker.client.shaded.org.apache.http.client.ClientProtocolException:
 Cannot retry request with a non-repeatable request entity: Connection reset by peer -> [Help 1]
 ```
 
-![插件代码](/images/code/docker-maven.png)
+```xml
+<plugin>
+    <groupId>com.spotify</groupId>
+    <artifactId>docker-maven-plugin</artifactId>
+    <version>1.2.2</version>
+    <dependencies>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
+    <configuration>
+        <imageName>oldBookShare</imageName>
+        <!-- 指定 Dockerfile 所在的文件目录 -->
+        <dockerDirectory>${project.basedir}</dockerDirectory>
+        <resources>
+            <resource>
+                <targetPath>/</targetPath>
+                <directory>${project.build.directory}</directory>
+                <include>${project.build.finalName}.jar</include>
+            </resource>
+        </resources>
+    </configuration>
+</plugin>
+```
 
 解决方法：将图中的oldBookShare改成old-book-share就好了，容器名称不能有大写。
 
