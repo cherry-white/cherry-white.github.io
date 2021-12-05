@@ -223,8 +223,8 @@ daovoice:
 
 # Tencent Chao
 tencentChao:
-  enable: false
-  appId: # app_id
+  enable: true
+  appId: 368715
 
 # LeanCloud
 leancloud:
@@ -251,7 +251,7 @@ pjax: false
 highlight:
   enable: true
   style: # https://highlightjs.org/static/demo/
-    light: Xcode
+    light: Monokai  # Xcode
     dark: Solarized Dark
 
 # SEO
