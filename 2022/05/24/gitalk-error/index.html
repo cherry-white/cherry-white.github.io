@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jenkins 安装 - 樱白</title>
+  <title>Gitalk 评论踩坑 - 樱白</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   <meta name="keywords" content="CherryWhite">
-  <meta name="description" content="Jenkins简介Jenkins是一个用Java编写的...">
+  <meta name="description" content="起因我的博客关于页面没有开通评论，就想给文章开通评论区...">
   <meta name="author" content="Cherry White">
   <link rel="icon" href="/images/icons/favicon-16x16.ico" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/favicon-32x32.ico" type="image/png" sizes="32x32">
@@ -154,7 +154,7 @@
       
       
     </div>
-    <div class="center">Jenkins 安装</div>
+    <div class="center">Gitalk 评论踩坑</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -196,60 +196,44 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/background/jenkins-install.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/images/background/gitalk-error.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">Jenkins 安装</h1>
+    <h1 class="head-title">Gitalk 评论踩坑</h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>十二月 04, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>五月 24, 2022</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>2091</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1766</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
         
-        <h3 id="Jenkins简介"><a href="#Jenkins简介" class="headerlink" title="Jenkins简介"></a>Jenkins简介</h3><p>Jenkins是一个用Java编写的开源的持续集成工具，提供了软件开发的持续集成服务。</p>
-<h4 id="官方地址"><a href="#官方地址" class="headerlink" title="官方地址"></a><a target="_blank" rel="noopener" href="https://www.jenkins.io/zh/">官方地址</a></h4><h3 id="Jenkins安装部署"><a href="#Jenkins安装部署" class="headerlink" title="Jenkins安装部署"></a>Jenkins安装部署</h3><ol>
-<li>安装JDK</li>
-</ol>
-<p>jenkins推荐安装<a target="_blank" rel="noopener" href="http://jdk.java.net/java-se-ri/11">JDK11</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs bash">// 下载JDK<br>wget https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_linux-x64_bin.tar.gz<br><br>// 解压JDK<br>tar -zxvf openjdk-11+28_linux-x64_bin.tar.gz<br><br>// 配置环境变量<br>vim /etc/profile<br><br>// 在/etc/profile底部加入<br><span class="hljs-built_in">export</span> JAVA_HOME=/opt/jdk-11<br><span class="hljs-built_in">export</span> CLASSPATH=.:<span class="hljs-variable">$&#123;JAVA_HOME&#125;</span>/lib<br><span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$&#123;PATH&#125;</span>:<span class="hljs-variable">$&#123;JAVA_HOME&#125;</span>/bin<br><br>// 刷新文件<br><span class="hljs-built_in">source</span> /etc/profile<br><br>// 查看Java版本是否和下载的一致<br>java -version<br><br>// 我的JDK显示一下信息<br>openjdk version <span class="hljs-string">&quot;11&quot;</span> 2018-09-25<br>OpenJDK Runtime Environment 18.9 (build 11+28)<br>OpenJDK 64-Bit Server VM 18.9 (build 11+28, mixed mode)<br></code></pre></td></tr></table></figure>
+        <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>我的博客关于页面没有开通评论，就想给文章开通评论区，点击登录功能发现，GitHub 登录总是失败。<br><img    class="lazyload" data-original="/images/article/gitalk/error.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">登陆报错</span></p>
+<h1 id="初步解决参考文章"><a href="#初步解决参考文章" class="headerlink" title="初步解决参考文章"></a>初步解决<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/350735142">参考文章</a></h1><p>找到对应的 GitHub 仓库，Issue 区往往能找到一些有效答案。</p>
+<p>gitalk中用到的 cors-anywhere.herokuapp.com 这个网站原本是用来演示用的，但是现在已经被滥用了。</p>
+<p>从2021.1.31开始用户必须手动先访问这个网站获取临时的访问权限，然后才能使用，作者建议开发者自己维护一个代理网站。</p>
+<p>在gitalk的issue中看到别人分享的一个在线代理，先拿来用下</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs http">https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token<br></code></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>下载Jenkins</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://www.jenkins.io/zh/download/">根据自己实际情况在官网下载</a></p>
-<p>我使用的是Debian系统，<a target="_blank" rel="noopener" href="https://pkg.jenkins.io/debian-stable/">安装过程</a></p>
-<ol start="3">
-<li>启动jenkins</li>
-</ol>
-<p>启动命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo service jenkins start<br></code></pre></td></tr></table></figure>
-<p>如果启动报错</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">Job <span class="hljs-keyword">for</span> jenkins.service failed because the control process exited with error code.<br>See <span class="hljs-string">&quot;systemctl status jenkins.service&quot;</span> and <span class="hljs-string">&quot;journalctl -xe&quot;</span> <span class="hljs-keyword">for</span> details.<br></code></pre></td></tr></table></figure>
-<p>大概率就是&#x2F;etc&#x2F;init.d&#x2F;jenkins文件读取不到JDK</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash">// 打开文件<br>sudo vim /etc/init.d/jenkins<br><br>// 需要在PATH变量加入java的路径 将java路径改成你自己的<br>PATH=/bin:/usr/bin:/sbin:/usr/sbin:/home/sakura/jdk-11/bin<br><br>// 刷新配置<br>sudo systemctl daemon-reload<br><br>// 启动jenkins<br>sudo service jenkins start<br></code></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>进入Jenkins</li>
-</ol>
-<p>在浏览器输入 <a target="_blank" rel="noopener" href="http://ip:8080/">http://IP:8080</a> 进入 Jenkins 页面</p>
-<p>大概率会看到以下报错</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">AWT is not properly configured on this server. Perhaps you need to run your container with <br><span class="hljs-string">&quot;-Djava.awt.headless=true&quot;</span>? See also: https://www.jenkins.io/redirect/troubleshooting/java.awt.headless<br></code></pre></td></tr></table></figure>
-
-<p>就是因为系统没有字体导致的，<a target="_blank" rel="noopener" href="https://www.jenkins.io/redirect/troubleshooting/java.awt.headless">需要根据自己系统安装工具</a><br>我的服务器需要安装以下工具</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash">// 安装这个就够了<br>sudo apt-get install fontconfig<br><br>// 实在不行在安装这两个<br>sudo apt-get install ttf-dejavu<br>sudo apt-get install xvfb<br><br>fc-cache --force<br><br>// 重启jenkins<br>sudo service jenkins restart<br></code></pre></td></tr></table></figure>
-
-<p>刷新 Jenkins 页面可以看到以下话面<br><img    class="lazyload" data-original="/images/article/jenkins/install.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">安装 Jenkins</span></p>
-<p>根据浏览器提示进行找到密码并继续</p>
-<p>选择 安装推荐的插件 安装Jenkins，并等待安装</p>
-<p>插件安装失败不用紧，直接继续就好了，有需要就创建用户，没需要就使用admin账号</p>
-<p>进入jenkins之后最好修改以下admin密码</p>
-<p>admin -&gt; configure 拉到下面可以修改账号密码</p>
-<p>Manage Jenkins -&gt; Manager Plugin -&gt; ADVANCED<br>最下面有 Update Site 设置为：<br><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json">https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json</a></p>
-<p>修改为中文需要安装插件 Localization: Chinese（Simplified）</p>
-<p>以上就是安装Jenkins的全过程了，如果什么问题可以在下方评论。</p>
+<p>我用的是zhaoo主题，在布局模板中找到代理gitalk.ejs文件，如果其他模板可以搜索gitalk关键字应该也能找到差不多的代码。</p>
+<p>在模板里加上proxy配置和在主题的_config.yml文件上也加上proxy配置:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">var</span> gitalk = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Gitalk</span>(&#123;<br>     <span class="hljs-attr">clientID</span>: <span class="hljs-string">&#x27;&lt;%= theme.gitalk.clientID %&gt;&#x27;</span>,<br>     <span class="hljs-attr">clientSecret</span>: <span class="hljs-string">&#x27;&lt;%= theme.gitalk.clientSecret %&gt;&#x27;</span>,<br>     <span class="hljs-attr">id</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>.<span class="hljs-property">pathname</span>,<br>     <span class="hljs-attr">repo</span>: <span class="hljs-string">&#x27;&lt;%= theme.gitalk.repo %&gt;&#x27;</span>,<br>     <span class="hljs-attr">owner</span>: <span class="hljs-string">&#x27;&lt;%= theme.gitalk.owner %&gt;&#x27;</span>,<br>     <span class="hljs-attr">admin</span>: <span class="hljs-string">&#x27;&lt;%= theme.gitalk.admin %&gt;&#x27;</span>,<br>     <span class="hljs-attr">proxy</span>: <span class="hljs-string">&#x27;&lt;%= theme.gitalk.proxy %&gt;&#x27;</span>,<br>   &#125;);<br></code></pre></td></tr></table></figure>
+<p>重新部署后发现依然有问题。</p>
+<p>查看了对应请求的应答码 429，表示请求太多，我个人估计是白嫖这个在线代理的人太多导致的。<br>既然白嫖的代理不能用，那我们就自己搭一个在线代理吧。</p>
+<h1 id="最终解决参考文章"><a href="#最终解决参考文章" class="headerlink" title="最终解决参考文章"></a>最终解决<a target="_blank" rel="noopener" href="https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403/">参考文章</a></h1><p>利用CloudFlare Worker创建在线代理，不需要我们有服务器，也不需要搭建Node.js服务，只需要注册一个CloudFlare账号，创建一个Worker，部署一个JS脚本就可以了，简单方便，下面我们就来看看如何创建吧。</p>
+<p>首先你需要一个 CloudFlare 的账号，如果还没有的话就先注册一个吧：<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">点我注册</a></p>
+<p>选择Workers，创建一个免费的Worker。<br><img    class="lazyload" data-original="/images/article/gitalk/register.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">创建Workers</span></p>
+<p>免费版本每天10万次请求也足以应对个人使用或者是小范围分享了。</p>
+<p>填写自己喜欢的二级域名，然后创建worker。</p>
+<p>进入github项目的 <a target="_blank" rel="noopener" href="https://github.com/Hanpeng-Chen/cloudflare-cors-anywhere/blob/master/index.js">index.js</a>，复制代码。</p>
+<p>清除脚本编辑器中的示例代码，将复制的代码粘贴进去。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs text">这里有个点需要注意：我们可以设置请求的黑白名单，这里的白名单我只设置了自己博客<br>大家可以根据自己的情况修改，当然也可以设置为whitelist = [ &quot;.*&quot; ]<br>这样的话知道你代理地址的人都可以用了，然而免费版本的每天只有10万次请求<br>如果用的人多了很容易就用完了，所以还是建议大家设置 whitelist<br></code></pre></td></tr></table></figure>
+<p><img    class="lazyload" data-original="/images/article/gitalk/edit.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">创建Workers</span><br>修改好之后，点击 保存并部署，如果部署正常的话，我们就可以使用我们创建的在线代理了。</p>
+<p>从右侧获取到你的worker域名并记下来，在上面提到_confix.yml文件的proxy配置项修改为如下代码：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">proxy:</span> <span class="hljs-string">https://sakura.cherrywhite.workers.dev/?https://github.com/login/oauth/access_token</span><br></code></pre></td></tr></table></figure>
+<p>一定要注意连接的地方，要加?,不然会出现no access token的错误</p>
+<p>重新部署我们的博客，再次点击 使用Github登录，这次登录成功，没有报错。<br>至此，个人在线代理就搭建成功了，博客的评论功能也能正常使用了，撒花！！！</p>
 
       </section>
       <section class="extra">
@@ -257,7 +241,7 @@
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>Cherry White</li>
-    <li><strong>本文链接：</strong><a href="https://cherry-white.github.io/2021/12/04/jenkins-install/index.html" title="https:&#x2F;&#x2F;cherry-white.github.io&#x2F;2021&#x2F;12&#x2F;04&#x2F;jenkins-install&#x2F;index.html">https:&#x2F;&#x2F;cherry-white.github.io&#x2F;2021&#x2F;12&#x2F;04&#x2F;jenkins-install&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="https://cherry-white.github.io/2022/05/24/gitalk-error/index.html" title="https:&#x2F;&#x2F;cherry-white.github.io&#x2F;2022&#x2F;05&#x2F;24&#x2F;gitalk-error&#x2F;index.html">https:&#x2F;&#x2F;cherry-white.github.io&#x2F;2022&#x2F;05&#x2F;24&#x2F;gitalk-error&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -274,12 +258,12 @@
 </section>
         
         
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CI-CD/" rel="tag">CI&#x2F;CD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/" rel="tag">jenkins</a></li></ul> 
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gitalk/" rel="tag">Gitalk</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%A5%E9%94%99/" rel="tag">报错</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B8%A9%E5%9D%91/" rel="tag">踩坑</a></li></ul> 
 
         
   <nav class="nav">
-    <a href="/2022/05/24/gitalk-error/"><i class="iconfont iconleft"></i>Gitalk 评论踩坑</a>
-    <a href="/2021/12/04/docker-maven/">docker-maven插件问题<i class="iconfont iconright"></i></a>
+    <a></a>
+    <a href="/2021/12/04/jenkins-install/">Jenkins 安装<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
@@ -324,7 +308,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Jenkins%E7%AE%80%E4%BB%8B"><span class="toc-text">Jenkins简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jenkins%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-text">Jenkins安装部署</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-text">起因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9D%E6%AD%A5%E8%A7%A3%E5%86%B3%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-text">初步解决参考文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E8%A7%A3%E5%86%B3%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-text">最终解决参考文章</span></a></li></ol>
   </aside>
 
         
