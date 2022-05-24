@@ -202,7 +202,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>五月 24, 2022</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1767</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1980</span>
     </div>
   </div>
 </section>
@@ -233,7 +233,9 @@
 <p><img    class="lazyload" data-original="/images/article/gitalk/edit.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">创建Workers</span><br>修改好之后，点击 保存并部署，如果部署正常的话，我们就可以使用我们创建的在线代理了。</p>
 <p>从右侧获取到你的worker域名并记下来，在上面提到_confix.yml文件的proxy配置项修改为如下代码：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">proxy:</span> <span class="hljs-string">https://sakura.cherrywhite.workers.dev/?https://github.com/login/oauth/access_token</span><br></code></pre></td></tr></table></figure>
-<p>一定要注意连接的地方，要加?,不然会出现no access token的错误</p>
+<p>一定要注意连接的地方，要加?,不然会出现no access token的错误<br>还有一个点要注意的是，如果还是有问题，index.js文件可以使用：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js">myHeaders.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;Access-Control-Allow-Origin&quot;</span>, <span class="hljs-string">&quot;*&quot;</span>);<br><span class="hljs-comment">// myHeaders.set(&quot;Access-Control-Allow-Origin&quot;, event.request.headers.get(&quot;Origin&quot;));</span><br></code></pre></td></tr></table></figure>
+
 <p>重新部署我们的博客，再次点击 使用Github登录，这次登录成功，没有报错。<br>至此，个人在线代理就搭建成功了，博客的评论功能也能正常使用了，撒花！！！</p>
 
       </section>
