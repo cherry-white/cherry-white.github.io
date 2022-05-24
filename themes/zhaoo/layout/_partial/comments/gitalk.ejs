@@ -10,7 +10,8 @@
       id: window.location.pathname,
       repo: '<%= theme.gitalk.repo %>',
       owner: '<%= theme.gitalk.owner %>',
-      admin: '<%= theme.gitalk.admin %>'
+      admin: '<%= theme.gitalk.admin %>',
+      proxy: '<%= theme.gitalk.proxy %>',
     });
     if ( <%- theme.comments.button %> ) {
       $("#comments-btn").on("click", function () {

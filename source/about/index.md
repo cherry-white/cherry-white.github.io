@@ -6,7 +6,7 @@ layout: "about"
 ---
 Me
 
-ZhangJun
+Cherry White
 
 喜欢动漫游戏
 
@@ -16,13 +16,16 @@ ZhangJun
 
 技术栈：
 
+- Unity、C#
 - SpringBoot、Laravel
 - Linux、Docker、Jenkins
 - React、Vue、Angular、Ts
+- Mysql、MybatisPlus
+
 
 联系方式
 
-- E-Mail：1789139001@qq.com
+- E-Mail：cherry.white@qq.com
 - WeChat：wxid_ptoe55mpaqri21
 - QQ：1789139001
 - Github: [Github](https://github.com/cherry-white) 、 [Gitee](https://gitee.com/zj1789139001)
