@@ -106,7 +106,7 @@ sudo service jenkins restart
 ```
 
 刷新 Jenkins 页面可以看到以下话面
-![安装 Jenkins](/images/jenkins/install.png)
+![安装 Jenkins](/images/article/jenkins/install.png)
 
 根据浏览器提示进行找到密码并继续
 
