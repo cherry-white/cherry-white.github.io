@@ -76,6 +76,11 @@ https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 proxy: https://sakura.cherrywhite.workers.dev/?https://github.com/login/oauth/access_token
 ```
 一定要注意连接的地方，要加?,不然会出现no access token的错误
+还有一个点要注意的是，如果还是有问题，index.js文件可以使用：
+```js
+myHeaders.set("Access-Control-Allow-Origin", "*");
+// myHeaders.set("Access-Control-Allow-Origin", event.request.headers.get("Origin"));
+```
 
 重新部署我们的博客，再次点击 使用Github登录，这次登录成功，没有报错。
 至此，个人在线代理就搭建成功了，博客的评论功能也能正常使用了，撒花！！！
