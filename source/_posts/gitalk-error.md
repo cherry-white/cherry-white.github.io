@@ -13,7 +13,8 @@ categories:
 我的博客关于页面没有开通评论，就想给文章开通评论区，点击登录功能发现，GitHub 登录总是失败。
 ![登陆报错](/images/article/gitalk/error.png)
 
-# 初步解决[参考文章](https://zhuanlan.zhihu.com/p/350735142)
+# 初步解决
+[参考文章](https://zhuanlan.zhihu.com/p/350735142)
 
 找到对应的 GitHub 仓库，Issue 区往往能找到一些有效答案。
 
@@ -45,7 +46,8 @@ https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 查看了对应请求的应答码 429，表示请求太多，我个人估计是白嫖这个在线代理的人太多导致的。
 既然白嫖的代理不能用，那我们就自己搭一个在线代理吧。
 
-# 最终解决[参考文章](https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403/)
+# 最终解决
+[参考文章](https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403/)
 利用CloudFlare Worker创建在线代理，不需要我们有服务器，也不需要搭建Node.js服务，只需要注册一个CloudFlare账号，创建一个Worker，部署一个JS脚本就可以了，简单方便，下面我们就来看看如何创建吧。
 
 首先你需要一个 CloudFlare 的账号，如果还没有的话就先注册一个吧：[点我注册](https://dash.cloudflare.com/)
