@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro';
 import { View, Image, Text } from '@tarojs/components';
 import { IPostItem } from '@/types/post';
 import styles from './index.module.scss';
+import { webUrl } from '../../../config.json';
 
 interface IPostItemProps {
   data: IPostItem;
@@ -20,7 +21,7 @@ const PostItem: FC<IPostItemProps> = ({ data }) => {
       {cover ? (
         <Image
           className={styles.cover}
-          src={cover}
+          src={webUrl + cover}
           lazyLoad
           mode='aspectFill'
         />

@@ -8,36 +8,30 @@ const About = () => {
   return (
     <View className={styles.about}>
       <Image className={styles.logo} src={logo} mode='aspectFill' />
-      <Text className={styles.title}>hexo-weapp-zhaoo</Text>
+      <Text className={styles.title}>Cherry White</Text>
       <View className={styles.listWrapper}>
         <List
           title='GitHub'
           icon='github'
           arrow
-          extraText='hexo-weapp-zhaoo'
+          extraText='Cherry White'
           onClick={
             () =>
               Taro.setClipboardData({
-                data: 'https://github.com/zhaoo/hexo-weapp-zhaoo',
+                data: 'https://gitee.com/zj1789139001',
               })
-            // Taro.navigateTo({
-            //   url: `/pages/webview/webview?url=https://github.com/zhaoo/hexo-weapp-zhaoo`,
-            // })
           }
         />
         <List
-          title='QQ群'
+          title='QQ'
           icon='QQ'
           arrow
-          extraText='550262893'
+          extraText='1789139001'
           onClick={
             () =>
               Taro.setClipboardData({
-                data: 'https://qm.qq.com/cgi-bin/qm/qr?k=L0VjfLZ0MAzSuCjmrSf5H37FiVCndnA2&jump_from=webapi',
+                data: '1789139001',
               })
-            // Taro.navigateTo({
-            //   url: `/pages/webview/webview?url=https://qm.qq.com/cgi-bin/qm/qr?k=L0VjfLZ0MAzSuCjmrSf5H37FiVCndnA2&jump_from=webapi`,
-            // })
           }
         />
       </View>

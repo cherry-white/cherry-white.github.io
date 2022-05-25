@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react';
 import Taro from '@tarojs/taro';
 import { View, Image, Text } from '@tarojs/components';
 import styles from './index.module.scss';
+import { webUrl } from '../../../config.json';
 
 interface IPostListProps {
   slug: string;
@@ -25,7 +26,7 @@ const PostList: FC<IPostListProps> = ({
         Taro.navigateTo({ url: `/pages/post/post?slug=${slug}` });
       }}
     >
-      <Image className={styles.cover} src={cover} lazyLoad mode='aspectFill' />
+      <Image className={styles.cover} src={webUrl + cover} lazyLoad mode='aspectFill' />
       <View className={styles.content}>
         <Text className={styles.title}>{title}</Text>
         <View className={styles.excerpt}>

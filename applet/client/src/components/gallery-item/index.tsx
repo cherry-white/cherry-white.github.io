@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro';
 import { View, Image, Text } from '@tarojs/components';
 import { IGalleryItem } from '@/types/gallery';
 import styles from './index.module.scss';
+import { webUrl } from '../../../config.json';
 
 interface IGalleryItemProps {
   data: IGalleryItem;
@@ -23,7 +24,7 @@ const GalleryItem: FC<IGalleryItemProps> = ({ data }) => {
       {cover ? (
         <Image
           className={styles.cover}
-          src={cover}
+          src={webUrl + cover}
           lazyLoad
           mode='aspectFill'
         />

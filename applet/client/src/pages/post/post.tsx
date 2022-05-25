@@ -17,6 +17,7 @@ import ImmersiveTitlebar from '@/components/immersive-titlebar';
 import Fab from '@/components/fab';
 import { IPostItem } from '@/types/post';
 import './post.scss';
+import { webUrl } from '../../../config.json';
 
 const Post = () => {
   const [post, setPost] = useState<Partial<IPostItem>>({});
@@ -65,12 +66,12 @@ const Post = () => {
         const imagesTemp = images;
         imagesTemp.push(src);
         setImages(imagesTemp);
-        return `<img ${attrBegin} src='${src}' mode='widthFix' id='image_${src}' lazy-load ${attrEnd} alt="">`; // 重定义图片标签
+        return `<img ${attrBegin} src='${webUrl + src}' mode='widthFix' id='image_${src}' lazy-load ${attrEnd} alt="">`; // 重定义图片标签
       }
     );
     data = data.replace(
       /<a([^>]*)href="([^"]*)"([^>]*)>/gim,
-      (match, attrBegin, href: string, attrEnd) => {
+      (_match, attrBegin, href: string, attrEnd) => {
         return `<a ${attrBegin} id='link_${href}' ${attrEnd}>`; // 重定义链接标签
       }
     );
@@ -97,7 +98,7 @@ const Post = () => {
     if (imageMatch) {
       Taro.previewImage({
         current: imageMatch[0],
-        urls: images,
+        urls: images.map(v => webUrl + v),
       });
     } else if (linkMatch) {
       Taro.setClipboardData({
@@ -115,7 +116,7 @@ const Post = () => {
           <View className='head'>
             {post.cover ? (
               <Image
-                src={post.cover}
+                src={webUrl + post.cover}
                 lazyLoad
                 className='cover'
                 mode='aspectFill'

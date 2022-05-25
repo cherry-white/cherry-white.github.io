@@ -8,9 +8,10 @@ import { View, Image, Text } from '@tarojs/components';
 import { getGalleryByName } from '@/apis/api';
 import { IGalleryItem } from '@/types/gallery';
 import './gallery.scss';
+import { webUrl } from '../../../config.json';
 
 const Gallery = () => {
-  const { name } = getCurrentInstance()?.router?.params;
+  const { name } = getCurrentInstance()?.router?.params ?? {name: ''};
   const [gallery, setGallery] = useState<IGalleryItem>(null);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const Gallery = () => {
   });
 
   const fetchGalleryData = async () => {
-    Taro.setNavigationBarTitle({ title: name });
+    Taro.setNavigationBarTitle({ title: name ?? '' });
     const data = await getGalleryByName(name);
     setGallery(data);
   };
@@ -40,7 +41,7 @@ const Gallery = () => {
   const handlePreviewImage = (current: string) => {
     Taro.previewImage({
       current,
-      urls: gallery.photos,
+      urls: gallery.photos.map(v => webUrl + v),
     });
   };
 
@@ -56,7 +57,7 @@ const Gallery = () => {
             {gallery.photos.map((item: string, index: number) => {
               return (
                 <Image
-                  src={item}
+                  src={webUrl + item}
                   key={index}
                   lazyLoad
                   mode='aspectFill'
