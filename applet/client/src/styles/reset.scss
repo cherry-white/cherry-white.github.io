@@ -1,0 +1,18 @@
+/* Weapp */
+
+page {
+  font-family: 'Hiragino Sans GB', 'Hiragino Sans GB W3', 'Microsoft YaHei',
+    'WenQuanYi Micro Hei', sans-serif;
+}
+
+view,
+text,
+scroll-view {
+  box-sizing: border-box;
+}
+
+button {
+  &:after {
+    display: none;
+  }
+}

@@ -150,7 +150,7 @@ toc:
 donate:
   enable: true
   alipay: /images/pay/alipay.png
-  wechat: /images/pay/wechat.png
+  wechat: /images/pay/wechat.jpg
 
 # Copyright
 post_copyright:

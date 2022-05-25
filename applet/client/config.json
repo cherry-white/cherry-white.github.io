@@ -1,0 +1,20 @@
+{
+  "baseUrl": "https://cherry-white.github.io/api",
+  "webUrl": "https://cherry-white.github.io",
+  "donate": {
+    "wechat": "https://cherry-white.github.io/images/pay/wechat.jpg",
+    "alipay": "https://cherry-white.github.io/images/pay/alipay.png"
+  },
+  "leancloud": {
+    "appId": "5nmYX1URDFyDdOVu6WxizEsF-gzGzoHsz",
+    "appKey": "xllg4mYlf0eT3efi7N0VOTeH",
+    "serverURLs": "https://leancloud.cn/"
+  },
+  "baiduAnalyze": {
+    "appKey": "b822ff0235"
+  },
+  "motto": {
+    "api": "https://v1.hitokoto.cn/?encode=text&c=i",
+    "default": "我在开了灯的床头下，想问问自己的心啊。"
+  }
+}

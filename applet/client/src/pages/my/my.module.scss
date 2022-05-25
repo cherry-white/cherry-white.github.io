@@ -1,0 +1,106 @@
+.officialAccount {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.my {
+  position: relative;
+  width: 750px;
+  height: 100vh;
+  background-color: $color-background-deep;
+
+  .userWrapper {
+    .backgroundImage {
+      position: absolute;
+      top: 0px;
+      left: -20px;
+      width: calc(100vw + 40px);
+      height: calc(100vw * 3 / 4);
+    }
+
+    .user {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
+      padding: 0 5vw;
+      height: calc(100vw * 3 / 4);
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        display: block;
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .userContent {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+
+        .nickname {
+          font-size: 36px;
+          font-weight: bold;
+          color: $color-white;
+        }
+
+        .motto {
+          @include substr(1);
+          font-size: 24px;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .tabnav {
+    position: absolute;
+    top: calc(100vw * 3 / 4 - 90px);
+    left: 5vw;
+    z-index: 1;
+    width: 90vw;
+    height: 22.5vw;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: $color-background;
+    box-shadow: $box-shadow;
+
+    .divide {
+      width: 2px;
+      height: 30px;
+      background-color: #ccc;
+    }
+
+    .tabnavItem {
+      height: 22.5vw;
+      width: 22.5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .text {
+        margin-top: 10px;
+        font-size: 24px;
+        color: $color-default;
+      }
+    }
+  }
+
+  .listWrapper {
+    position: absolute;
+    top: calc(100vw * 3 / 4);
+    left: 0;
+    margin-top: 22.5vw;
+  }
+}

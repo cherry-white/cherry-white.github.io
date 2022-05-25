@@ -1,0 +1,49 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/integral/integral",
+          "pathName": "pages/integral/integral",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/post/post",
+          "pathName": "pages/post/post",
+          "query": "slug=hexo-theme-zhaoo",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": 1000
+        },
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": 1011
+        },
+        {
+          "name": "pages/comment/comment",
+          "pathName": "pages/comment/comment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/like/like",
+          "pathName": "pages/like/like",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "projectname": "applet",
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

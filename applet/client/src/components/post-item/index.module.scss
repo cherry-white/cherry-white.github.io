@@ -1,0 +1,47 @@
+.postItem {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 345px;
+  margin: 0 10px 20px 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: $color-background;
+  box-shadow: $box-shadow;
+
+  .top {
+    position: absolute;
+    right: -32px;
+    top: -32px;
+    width: 50px;
+    height: 50px;
+    background-color: $color-link;
+    transform: rotate(-45deg);
+    box-shadow: -3px 5px 6px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .cover {
+    width: 345px;
+    height: 345px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .title {
+    @include substr(1);
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .excerpt {
+    @include substr(2);
+    height: 72px;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+}
