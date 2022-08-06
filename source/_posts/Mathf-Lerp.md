@@ -48,7 +48,7 @@ public void Update()
         CurValue = Mathf.Lerp(CurValue, 100f, 0.1f);
         
         // 根据运动曲线插值，可以实现减速、加速、值先增加再减小等效果
-        Mathf.Lerp(0f, 100f, LerpTime/LerpContinuedTime, Curve.Evaluate(ShowTime / ProgressShowTime));
+        Mathf.Lerp(0f, 100f, LerpTime/LerpContinuedTime, Curve.Evaluate(LerpTime / LerpContinuedTime));
     }
 }
 ```
