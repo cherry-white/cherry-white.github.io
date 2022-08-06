@@ -22,6 +22,18 @@ Cherry White
 - React、Vue、Angular、Ts
 - Mysql、MybatisPlus
 
+个人经历
+
+2022.04 - 至今：
+
+QQ飞车手游项目组 游戏前端开发
+
+2020.12-2022.04：
+
+金宝贝早教 前端开发
+
+毕业于广州大学华软软件学院
+
 
 联系方式
 
