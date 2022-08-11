@@ -1,6 +1,6 @@
 [
   {
-    "name": "动漫",
+    "name": "封面",
     "cover": "/images/background/about.jpg",
     "description": "君未看花时，花与君同寂；君来看花日，花色一时明。",
     "photos": [
@@ -10,7 +10,16 @@
       "/images/background/jenkins-install.jpg",
       "/images/background/hello.jpg",
       "/images/background/gitalk-error.jpg",
-      "/images/background/Mathf-Lerp.jpg"
+      "/images/background/Mathf-Lerp.jpg",
+      "/images/background/Configure-GIT-And-SSH.jpg"
+    ]
+  },
+  {
+    "name": "动漫",
+    "cover": "/images/anime/meteor.jpg",
+    "description": "君未看花时，花与君同寂；君来看花日，花色一时明。",
+    "photos": [
+      "/images/anime/meteor.jpg"
     ]
   }
 ]
