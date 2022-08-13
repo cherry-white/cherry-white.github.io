@@ -35,3 +35,12 @@ ssh-keygen -t rsa -C “youremail@gmail.com”
 按3个回车，密码为空。
 
 生成的好的文件默认存放路径是在： C:\Users\你的用户名\.ssh
+
+id_rsa是私钥，id_rsa.pub是公钥。
+
+### GitHub配置
+把公钥里面的字符串复制好，登录 Github，右上角个人，选 Settings，选SSH and GPG keys,再点New SSH key。
+
+这里 Title 随便起个名，方便自己记，Key 的内容，就是 Ctrl+V 粘贴 id_rsa.pub 里的内容。
+
+![配置SSH key](/images/article/configs/github-ssh.jpg)
