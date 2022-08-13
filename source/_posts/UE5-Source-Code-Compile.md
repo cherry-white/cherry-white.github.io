@@ -22,7 +22,7 @@ UnrealEngine是个开源商业引擎，但是它在GitHub上的开源是个私�
 
 授权成功后Github会发送一封验证邮件，激活一下就可以了。
 
-![激活](/images/article/UnrealEngine/JoinEpicGames.jpg)
+![激活](/images/article/UnrealEngine/JoinEpicGames.png)
 
 ### 下载源码
 
@@ -43,7 +43,17 @@ UE5 上最活跃的开发发生在 `ue5-main` 分支。这个分支是引擎的�
 当代码完全下载下来后进入目录
 
 1. 运行 `Setup.bat`，它会帮你装 UE5 需要的依赖库，要挺久的，等它慢慢完成。
+
+![运行Setup.bat](/images/article/UnrealEngine/SetUp.png)
+
 2. 运行 `GenerateProjectFiles.bat` 它帮你装缺失的库，然后生成 `UE5.sln`。
+
+![运行GenerateProjectFiles.bat](/images/article/UnrealEngine/GenerateProjectFiles.jpg)
+
 3. 使用 Rider 打开目录 `UE5.sln`，设置 UE5 设为启动项目 并运行。
    
 ![设置启动项为UE5](/images/article/UnrealEngine/SetRunUE5.jpg)
+
+运行UE5
+
+![UE5](/images/article/UnrealEngine/UE5.jpg)
