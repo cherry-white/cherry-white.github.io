@@ -30,6 +30,9 @@ UnrealEngine是个开源商业引擎，但是它在GitHub上的开源是个私�
 ```git
 git clone git@github.com:EpicGames/UnrealEngine.git
 ```
+
+如果命令没有权限，请先[配置Git和SSh](https://cherry-white.github.io/2022/08/11/Configure-GIT-And-SSH/)
+
 代码clone下来之后，首先打个 `git branch --all` 命令，可以看到许多分支，本地有是白色的，当前分支是绿色的，远端分支本地没有则是红色的。
 
 ![Unreal代码分支](/images/article/UnrealEngine/UnrealCodeBranch.jpg)
