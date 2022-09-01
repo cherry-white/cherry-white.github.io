@@ -14,7 +14,8 @@
       "/images/background/Mathf-Lerp.jpg",
       "/images/background/Configure-GIT-And-SSH.jpg",
       "/images/background/Introduction-Game-Engine.jpg",
-      "/images/background/Engine-Hierarchy.jpg"
+      "/images/background/Engine-Hierarchy.jpg",
+      "/images/background/How-Build-Game-World.jpg"
     ]
   },
   {
@@ -22,7 +23,8 @@
     "cover": "/images/anime/meteor.jpg",
     "description": "君未看花时，花与君同寂；君来看花日，花色一时明。",
     "photos": [
-      "/images/anime/meteor.jpg"
+      "/images/anime/meteor.jpg",
+      "/images/anime/2055645.jpg"
     ]
   }
 ]
