@@ -302,11 +302,105 @@ Metallic Roughness（MR），这一模型中首先设置一个Base Color，而�
 IBL的核心思想是：若我们能对环境光照的信息进行一些预处理，是否能减少光照处理中积分运算消耗的时间
 ![IBL核心思想](/images/article/Games104/05/Games104_05_43.png)
 
+BRDF的材质模型分为diffuse和specular两部分：
+![BRDF的材质模型](/images/article/Games104/05/Games104_05_44.png)
+
+对于漫反射部分的光照，我们可以预先进行对应的卷积运算，并将其储存在Irradiance Map中
+![Diffuse](/images/article/Games104/05/Games104_05_45.png)
+
+对于Specular部分，它涉及大量复杂的计算，可以近似为Lighting Term和BRDF Term的乘积
+![Specular](/images/article/Games104/05/Games104_05_46.png)
+![第一部分](/images/article/Games104/05/Games104_05_47.png)
+![第二部分](/images/article/Games104/05/Games104_05_48.png)
+
+通过预计算能快速的将shading point的光照信息通过预计算求出：
+![预计算](/images/article/Games104/05/Games104_05_49.png)
+
+从而让我们在环境光照中得到一个不是很shiny的高光。
+通过对比，我们可以看到开了IBL的环境场景更加层次分明。
+![IBL对比](/images/article/Games104/05/Games104_05_50.png)
+
 ## 经典阴影方法
+其实游戏中经典主流的shadow算法是cascade shadow，cascade可以理解为一层层的楼梯的场景
+![cascade shadow](/images/article/Games104/05/Games104_05_51.png)
+
+例如10米内的物体的shadow，我们采用高精度的shadow map，然后根据距离的增加，我们逐渐降低shadow map的精度，
+这样最后绘制出来的shadow，近处的shadow足够清晰，远处的shadow足够稀疏，这样也符合一个光学原理，近大远小的特点，
+近处的采样率高，远处的采样率低，眼睛的采样率从下降因此远处的从光的采样率也下降，从而使用了低精度的shadow map使得完美契合。
+![cascade shadow步骤](/images/article/Games104/05/Games104_05_52.png)
+
+但是cascade shadow有一个问题，就是由于分成了不同层级采用了不同的采样精度，
+因此不同层级之间的交界处需要进行插值处理，否则就会产生一个很生硬的边界。
+![边界问题](/images/article/Games104/05/Games104_05_53.png)
+
+优点：
+* 很快,因为用空间换时间，但它消耗的存储空间十分大。
+* 效果比较好。
+
+缺点：
+* 近处的shadow质量不会特别高。
+* shadows没有颜色
+* 透明的物体会显示不透明的阴影。
+
+![cascade shadow优缺点](/images/article/Games104/05/Games104_05_54.png)
+
+### 软阴影
+#### PCF-PercentageCloserFilter
+原理:对当前像素周围的阴影地图进行采样，并将其深度与所有的采样进行比较，通过插值，我们得到了光和影之间更平滑的线
+![PCF](/images/article/Games104/05/Games104_05_55.png)
+
+#### PCSS - PercentageCloserSoftShadow
+根据物体距离光源的远近，确定阴影的质量。
+![PCSS](/images/article/Games104/05/Games104_05_56.png)
+
+#### Variance Soft Shadow Map
+利用深度的平均值和方差，直接接近深度分布的百分比，而不是将单个深度与特定区域进行比较。
+![Variance Soft Shadow Map](/images/article/Games104/05/Games104_05_57.png)
+
+#### 上个时代的3A标配选择
+* 光照:Lightmap + Lightprobe。都会有解决不同的问题
+* 材质:PBR(SG、MR) + IBL(背光、环境光)
+* Shadow:CascadeShadow+VSSM
+
+![上个时代的3A标配选择](/images/article/Games104/05/Games104_05_58.png)
 
 ## 前沿技术
 
-## Shader的管理
+### 着色器模型（Shader Model）
+* Compute shader
+* Mesh shader
+* Ray-tracing shader
+
+![Shader Model](/images/article/Games104/05/Games104_05_59.png)
+
+### 实时光线追踪（Real-Time Ray-Tracing）
+上面讲到的GI算法，其实都不是真实的实时光照处理，它们都有一定的预计算或者很多非常规假设。
+但在新一代硬件支持下，实时光线追踪的处理方式出现了，虽然现在还没有能够大规模普及，但这项技术已经在突破的边缘。
+
+2018年NVIDIA宣布了可加速硬件中光线追踪速度的新架构Turing，以及搭载实时光线追踪技术的RTX系列显卡。
+同年，第一款搭载RTX实时混合光线追踪技术的游戏《战地5（Battlefield V）》正式面世
+![实时光线追踪](/images/article/Games104/05/Games104_05_60.png)
+
+### 实时GI（Real-Time Global Illumination）
+![实时GI](/images/article/Games104/05/Games104_05_61.png)
+
+### 更多复杂材质
+毛发渲染，皮肤渲染等复杂材质的渲染。
+![更多复杂材质](/images/article/Games104/05/Games104_05_62.png)
+
+### Virtual Shadow Maps
+Virtual Shadow Maps和Virtual Texture原理很像。Virtual Texture是将游戏中需要用到的所有纹理Pack到一张纹理中，
+需要使用时就加载调用，不需要时就进行卸载。
+
+Virtual Shadow Maps首先计算哪些地方需要Shadow Map，然后在一个完整虚拟的Shadow Map中去分配空间，
+每小块得生成Shadow Maps。在计算Shadow时，反向去取小格数据。这种处理方式可以更有效利用存储空间。
+![Virtual Shadow Maps](/images/article/Games104/05/Games104_05_63.png)
+
+### Uber Shader
+通过宏定义不同情况下的Shader组合，在编译时生成大量独立的Shader代码，
+这就是所谓Uber Shader(类似Unity中的Shader变体概念)。这样的好处是，当Shader发生变化时，
+只需修改组合Shader后重新编译。
+![Uber Shader](/images/article/Games104/05/Games104_05_64.png)
 
 [参考文章1](https://zhuanlan.zhihu.com/p/543728861)
 
