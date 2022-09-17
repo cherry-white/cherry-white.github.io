@@ -1,7 +1,7 @@
 <% if (theme.gitalk.clientID && theme.gitalk.clientSecret) { %>
-<link rel="stylesheet" href="https://unpkg.com/gitalk@1.8.0/dist/gitalk.css">
+<%- theme.vendors.fancybox_css ? css(theme.vendors.fancybox_css) : css('lib/gitalk/gitalk.css') %>
 <div id="gitalk" class="gitalk"></div>
-<script defer src="https://unpkg.com/gitalk@1.8.0/dist/gitalk.min.js"></script>
+<%- theme.vendors.gitalk_js ? js(theme.vendors.gitalk_js) : js('lib/gitalk/gitalk.js') %>
 <script>
   window.onload = function () {
     var gitalk = new Gitalk({

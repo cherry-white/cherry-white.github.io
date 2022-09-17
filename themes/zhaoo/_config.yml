@@ -279,9 +279,11 @@ vendors:
   qrcode_js:
   daovoice_js:
   lottie_js:
+  gitalk_js:
+  gitalk_css:
   fancybox_css:
   highlight_css:
-  iconfont_css:
+  iconfont_css: https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css
 
 # Custom
 custom:
