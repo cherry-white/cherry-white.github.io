@@ -42,9 +42,7 @@ var description = '';
 
   <%- css(['css/style']) %>
 
-  <% if (theme.vendors.iconfont_css) { %>
-    <%- css(theme.vendors.iconfont_css) %>
-  <% } %>
+  <%- theme.vendors.iconfont_css ? css(theme.vendors.iconfont_css) : css('lib/iconfont/iconfont.css') %>
 
   <% if (theme.fancybox) { %>
     <%- theme.vendors.fancybox_css ? css(theme.vendors.fancybox_css) : css('lib/fancybox/fancybox.css') %>

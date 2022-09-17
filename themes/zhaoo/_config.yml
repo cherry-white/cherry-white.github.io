@@ -190,7 +190,6 @@ gitalk:
   admin: ['cherry-white']
   clientID: 5d2553717eea46759e10
   clientSecret: 4d93ce39e65dd2c5b9e364f75d06efd73c64a8ba
-  proxy: https://sakura.cherrywhite.workers.dev/?https://github.com/login/oauth/access_token
 
 # Valine
 valine:
@@ -270,7 +269,7 @@ analytics:
 # Script Settings
 # --------------------------------------------------
 
-# CDN
+# CDN 对于外部静态文件（CSS 或 JS），可以使用第三方 `CDN` 库进行加速。在主题配置文件中填写相应的 `URL` 即可配置，你可以使用默认值（BootCDN），留空则使用本地 `lib` 目录下的文件。
 vendors:
   jquery_js:
   fancybox_js:
@@ -283,7 +282,7 @@ vendors:
   gitalk_css:
   fancybox_css:
   highlight_css:
-  iconfont_css: https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css
+  iconfont_css:
 
 # Custom
 custom:

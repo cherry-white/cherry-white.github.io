@@ -3,24 +3,23 @@
 <div id="gitalk" class="gitalk"></div>
 <%- theme.vendors.gitalk_js ? js(theme.vendors.gitalk_js) : js('lib/gitalk/gitalk.js') %>
 <script>
+  const title = window.location.pathname.substring(0, 50);
   window.onload = function () {
-    var gitalk = new Gitalk({
+    const gitalk = new Gitalk({
       clientID: '<%= theme.gitalk.clientID %>',
       clientSecret: '<%= theme.gitalk.clientSecret %>',
-      id: window.location.pathname,
+      id: title,
       repo: '<%= theme.gitalk.repo %>',
       owner: '<%= theme.gitalk.owner %>',
       admin: '<%= theme.gitalk.admin %>',
-      proxy: '<%= theme.gitalk.proxy %>',
+      distractionFreeMode: false,
     });
     if ( <%- theme.comments.button %> ) {
       $("#comments-btn").on("click", function () {
         $(this).hide();
-        gitalk.render('gitalk');
       });
-    } else {
-      gitalk.render('gitalk');
     }
+    gitalk.render('gitalk');
   }
 </script>
 <% } %>
