@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "leancloud-storage": "4.12.2",
+        "leancloud-storage": "^4.13.2",
         "wx-server-sdk": "~2.6.1"
     }
 }

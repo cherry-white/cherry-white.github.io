@@ -8,31 +8,23 @@ categories:
 - 安装
 - 下载
 ---
-
 ## 编辑器
+### IDEA 下载地址：[https://www.jetbrains.com/idea/download/#section=windows](https://www.jetbrains.com/idea/download/#section=windows)
+### Rider 下载地址：[https://www.jetbrains.com.cn/rider/download/#section=windows](https://www.jetbrains.com.cn/rider/download/#section=windows)
+### CLion 下载地址：[https://www.jetbrains.com.cn/clion/download/#section=windows](https://www.jetbrains.com.cn/clion/download/#section=windows)
+### PyCharm 下载地址：[https://www.jetbrains.com.cn/pycharm/download/#section=windows](https://www.jetbrains.com.cn/pycharm/download/#section=windows)
+### VSCode 下载地址：[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-### Jetbrains
+## 深度学习平台
+### 百度飞桨：[https://www.paddlepaddle.org.cn/](https://www.paddlepaddle.org.cn/)
 
-#### IDEA 下载地址：[https://www.jetbrains.com/idea/download/#section=windows](https://www.jetbrains.com/idea/download/#section=windows)
+## 调试工具
+### Apifox：[https://www.apifox.cn/](https://www.paddlepaddle.org.cn/)
 
-#### Rider 下载地址：[https://www.jetbrains.com.cn/rider/download/#section=windows](https://www.jetbrains.com.cn/rider/download/#section=windows)
-
-#### CLion 下载地址：[https://www.jetbrains.com.cn/clion/download/#section=windows](https://www.jetbrains.com.cn/clion/download/#section=windows)
-
-#### PyCharm 下载地址：[https://www.jetbrains.com.cn/pycharm/download/#section=windows](https://www.jetbrains.com.cn/pycharm/download/#section=windows)
-
-### 微软
-
-#### VSCode 下载地址：[https://code.visualstudio.com/](https://code.visualstudio.com/)
+## SSH工具
+### MobaXterm：[https://mobaxterm.mobatek.net/](https://mobaxterm.mobatek.net/K)
 
 ## 数据库
-
-### MongoDB
-
-#### MongoDB 下载地址：[https://www.mongodb.com/download-center/community](https://www.mongodb.com/download-center/community)
-
-#### Studio 3T 下载地址：[https://studio3t.com/download/](https://studio3t.com/download/)
-
-### MySQL
-
-#### MySQL 下载地址：[https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
+### MongoDB 下载地址：[https://www.mongodb.com/download-center/community](https://www.mongodb.com/download-center/community)
+### Studio 3T 下载地址：[https://studio3t.com/download/](https://studio3t.com/download/)
+### MySQL 下载地址：[https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
