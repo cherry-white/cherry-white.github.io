@@ -4,7 +4,7 @@ const apiProxy = createProxyMiddleware('/githubAgent', {
     target: 'https://github.com/',
     changeOrigin: true,
     pathRewrite: {
-        '^/githubAgent/': '/', // rewrite path 将链接中的 /api/ 替换为 '/'
+        '^/githubAgent/': '/', // rewrite path 将链接中的 /githubAgent/ 替换为 '/'
     },
 });
 
