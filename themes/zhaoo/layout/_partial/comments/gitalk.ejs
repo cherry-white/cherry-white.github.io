@@ -12,7 +12,8 @@
       repo: '<%= theme.gitalk.repo %>',
       owner: '<%= theme.gitalk.owner %>',
       admin: '<%= theme.gitalk.admin %>',
-      distractionFreeMode: false,
+      proxy: '<%= theme.gitalk.proxy %>',
+      distractionFreeMode: true,
     });
     if ( <%- theme.comments.button %> ) {
       $("#comments-btn").on("click", function () {
