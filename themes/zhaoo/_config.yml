@@ -190,7 +190,7 @@ gitalk:
   admin: ['cherry-white']
   clientID: 5d2553717eea46759e10
   clientSecret: 4d93ce39e65dd2c5b9e364f75d06efd73c64a8ba
-  proxy: https://cors-server-ecru.vercel.app/github_access_token
+  proxy: https://sakura.cherrywhite.workers.dev/?https://github.com/login/oauth/access_token
 
 # Valine
 valine:
