@@ -46,7 +46,7 @@ https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 查看了对应请求的应答码 429，表示请求太多，我个人估计是白嫖这个在线代理的人太多导致的。
 既然白嫖的代理不能用，那我们就自己搭一个在线代理吧。
 
-# 最终解决
+# 解决方法（一）
 [参考文章](https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403/)
 利用CloudFlare Worker创建在线代理，不需要我们有服务器，也不需要搭建Node.js服务，只需要注册一个CloudFlare账号，创建一个Worker，部署一个JS脚本就可以了，简单方便，下面我们就来看看如何创建吧。
 
@@ -84,3 +84,21 @@ myHeaders.set("Access-Control-Allow-Origin", "*");
 
 重新部署我们的博客，再次点击 使用Github登录，这次登录成功，没有报错。
 至此，个人在线代理就搭建成功了，博客的评论功能也能正常使用了，撒花！！！
+
+# 解决方法（二）
+使用Nginx做一个请求转发服务器 ，在nginx配置文件中加入
+```nginx
+# 插入 Gitalk Auth Use 关键点
+location /github {
+    if ($request_method = 'OPTIONS') {
+        return 204;
+    }
+    proxy_pass https://github.com/; # 注意尾部斜杠不能少
+}
+```
+
+前端请求是https://xxx/github/login/oauth/access_token,
+而实际请求是https://github.com/login/oauth/access_token，所以解决了跨域问题。
+
+Gitalk配置代理，proxy: /github/login/oauth/access_token
+
