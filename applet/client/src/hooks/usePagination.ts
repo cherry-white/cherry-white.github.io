@@ -41,10 +41,7 @@ const usePagination: IUsePagination = () => {
     if (!data || !pageCount || data.length < pageCount) {
       setHasMore(false);
     } else {
-      setCurrentData(data)
-      // currentData
-      //   ? setCurrentData(currentData.concat(data))
-      //   : setCurrentData(data);
+      setCurrentData(currentData.concat(data));
     }
     setIsLoading(false);
     stopPullDownRefresh();
