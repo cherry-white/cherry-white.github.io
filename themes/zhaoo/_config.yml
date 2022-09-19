@@ -179,7 +179,7 @@ galleries:
 # --------------------------------------------------
 
 comments:
-  enable: true
+  enable: false
   type: gitalk # gitalk | valine | changyan
   button: true
 
