@@ -4,7 +4,7 @@ date: 2021-12-04 19:56:47
 image: /images/background/docker-maven.jpg 
 tag: [java, maven, 插件]
 categories:
-- 报错
+- 踩坑
 ---
 
 个人在使用docker-maven-plugin来构建镜像的时候出现报错消息

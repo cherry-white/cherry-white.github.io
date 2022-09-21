@@ -5,6 +5,7 @@ image: /images/background/hello.jpg
 tags: [Hexo, 主题]  #设置标签
 categories:  #设置分类
 - 博客
+- 安装
 ---
 
 欢迎来到[我的博客](https://cherry-white.github.io/)! 这是我的第一篇文章。

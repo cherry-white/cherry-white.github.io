@@ -4,7 +4,7 @@ date: 2021-12-04 21:41:10
 image: /images/background/jenkins-install.jpg
 tags: [jenkins, CI/CD]
 categories:
-- 软件安装
+- 安装
 ---
 
 ### Jenkins简介
