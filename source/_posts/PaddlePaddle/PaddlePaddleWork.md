@@ -1,6 +1,6 @@
 ---
 title: 飞桨深度学习平台作业
-image: /images/background/PaddlePaddleWork
+image: /images/background/PaddlePaddleWork.jpg
 tags: [机器学习， 深度学习, 作业]
 date: 2022-09-21 23:59:59
 categories:
