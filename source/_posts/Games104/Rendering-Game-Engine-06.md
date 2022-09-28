@@ -1,10 +1,13 @@
 ---
-title:  现代游戏引擎 - 游戏中地形大气和云的渲染（六）
+title: 现代游戏引擎 - 游戏中地形大气和云的渲染（六）
 image: /images/background/Rendering-Game-Engine-02.jpg
-tags: [游戏引擎, Game104]
-date: 2022-09-14 22:27:01
+tags:
+  - 游戏引擎
+  - Game104
 categories:
-- 游戏引擎
+  - 游戏引擎
+abbrlink: aa8fbdb6
+date: 2022-09-14 22:27:01
 ---
 ## 概括
 前面章节我们了解了如何处理光线与物体的关系，这就有了渲染的基础。真实世界中地形是十分重要的部分，

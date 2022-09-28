@@ -162,3 +162,11 @@ mathjax:
   extension_options: {}
     # you can put your extension options here
     # see http://docs.mathjax.org/en/latest/options/input/tex.html#tex-extension-options for more detail
+
+# 代码压缩
+neat_enable: true
+neat_html:
+  enable: true
+  # 排除文件
+  exclude:
+    - '*.min.css'

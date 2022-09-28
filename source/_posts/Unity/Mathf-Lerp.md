@@ -1,11 +1,14 @@
 ---
 title: Mathf.Lerp 使用
-date: 2022-08-06 15:05:15
 image: /images/background/Mathf-Lerp.jpg
-tags: [Unity, Unity API]
+tags:
+  - Unity
+  - Unity API
 categories:
-- Unity
-- Unity API
+  - Unity
+  - Unity API
+abbrlink: 6ab666a7
+date: 2022-08-06 15:05:15
 ---
 
 ### 参数解析

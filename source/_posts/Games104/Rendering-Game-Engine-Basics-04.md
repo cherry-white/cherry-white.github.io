@@ -1,10 +1,13 @@
 ---
 title: 现代游戏引擎 - 游戏引擎中的渲染实践（四）
 image: /images/background/Rendering-Game-Engine-Basics.jpg
-tags: [游戏引擎, Game104]
-date: 2022-09-03 20:53:52
+tags:
+  - 游戏引擎
+  - Game104
 categories:
-- 游戏引擎
+  - 游戏引擎
+abbrlink: 3d4c0b0
+date: 2022-09-03 20:53:52
 ---
 ## 渲染概述
 渲染是游戏引擎的基础，而渲染的理论基础是计算机图形学。但计算机图形学与游戏渲染存在一些区别：

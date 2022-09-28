@@ -1,11 +1,13 @@
 ---
 title: GPU 工作原理
 image: /images/background/GPU-Working-Principle.jpg
-tags: [GPU]
-date: 2022-09-04 10:13:02
+tags:
+  - GPU
 categories:
-- GPU
-- 原理
+  - GPU
+  - 原理
+abbrlink: 3e8e8143
+date: 2022-09-04 10:13:02
 ---
 ## 为什么GUP计算是可行的（我的数据在哪里）
 Flops(每秒种浮点运算次数)跟机器的算力有关

@@ -1,11 +1,14 @@
 ---
 title: Hexo 搭建静态博客
-date: 2021-12-04 11:22:50
 image: /images/background/hello.jpg
-tags: [Hexo, 主题]  #设置标签
-categories:  #设置分类
-- 博客
-- 安装
+tags:
+  - Hexo
+  - 主题
+categories:
+  - 博客
+  - 安装
+abbrlink: dfcd98a4
+date: 2021-12-04 11:22:50
 ---
 
 欢迎来到[我的博客](https://cherry-white.github.io/)! 这是我的第一篇文章。

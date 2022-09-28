@@ -1,10 +1,13 @@
 ---
 title: 配置 Git 和 SSH
-date: 2022-08-11 16:29:13
 image: /images/background/Configure-GIT-And-SSH.jpg
-tags: [Git, SSH]
+tags:
+  - Git
+  - SSH
 categories:
-- 配置
+  - 配置
+abbrlink: e0c8e18d
+date: 2022-08-11 16:29:13
 ---
 
 ### Git 下载安装

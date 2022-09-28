@@ -1,12 +1,15 @@
 ---
 title: 常用地址
-date: 2022-06-19 09:38:16
 image: /images/background/Common-Collect.jpg
-tags: [安装, 下载]
+tags:
+  - 安装
+  - 下载
 top: 99999
 categories:
-- 安装
-- 下载
+  - 安装
+  - 下载
+abbrlink: 9b20463a
+date: 2022-06-19 09:38:16
 ---
 ## 编辑器
 ### IDEA 下载地址：[https://www.jetbrains.com/idea/download/#section=windows](https://www.jetbrains.com/idea/download/#section=windows)

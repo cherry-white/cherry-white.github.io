@@ -1,10 +1,13 @@
 ---
 title: 现代游戏引擎 - 游戏中渲染管线、后处理和其他的一切（七）
 image: /images/background/Rendering-Game-Engine-03.jpg
-tags: [游戏引擎, Game104]
-date: 2022-09-21 19:33:38
+tags:
+  - 游戏引擎
+  - Game104
 categories:
-- 游戏引擎
+  - 游戏引擎
+abbrlink: ed8f511c
+date: 2022-09-21 19:33:38
 ---
 ## 环境光遮蔽（Ambient Occlusion）
 在之前的章节中，我们提到过对于阴影的处理，但有一种阴影是难以通过这种方式来处理的——物体自身局部对光线的遮挡，

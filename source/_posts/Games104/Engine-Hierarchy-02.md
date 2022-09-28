@@ -1,10 +1,13 @@
 ---
 title: 现代游戏引擎 - 引擎架构分层（二）
 image: /images/background/Engine-Hierarchy.jpg
-tags: [游戏引擎, Game104]
-date: 2022-08-30 21:51:02
+tags:
+  - 游戏引擎
+  - Game104
 categories:
-- 游戏引擎
+  - 游戏引擎
+abbrlink: a6ae6279
+date: 2022-08-30 21:51:02
 ---
 ## 前言
 * 资源层：负责加载管理资源

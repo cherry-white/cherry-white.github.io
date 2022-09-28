@@ -1,10 +1,14 @@
 ---
-title: docker-maven插件问题 
-date: 2021-12-04 19:56:47 
-image: /images/background/docker-maven.jpg 
-tag: [java, maven, 插件]
+title: docker-maven插件问题
+image: /images/background/docker-maven.jpg
+tag:
+  - java
+  - maven
+  - 插件
 categories:
-- 踩坑
+  - 踩坑
+abbrlink: bf2beecf
+date: 2021-12-04 19:56:47
 ---
 
 个人在使用docker-maven-plugin来构建镜像的时候出现报错消息

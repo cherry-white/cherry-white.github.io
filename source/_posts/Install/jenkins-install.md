@@ -1,10 +1,13 @@
 ---
 title: Jenkins 安装
-date: 2021-12-04 21:41:10
 image: /images/background/jenkins-install.jpg
-tags: [jenkins, CI/CD]
+tags:
+  - jenkins
+  - CI/CD
 categories:
-- 安装
+  - 安装
+abbrlink: '11880203'
+date: 2021-12-04 21:41:10
 ---
 
 ### Jenkins简介

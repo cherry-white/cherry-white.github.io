@@ -1,11 +1,15 @@
 ---
 title: Gitalk 评论踩坑
 image: /images/background/gitalk-error.jpg
-tags: [Gitalk, 踩坑, 报错]
+tags:
+  - Gitalk
+  - 踩坑
+  - 报错
+categories:
+  - 博客
+  - 踩坑
+abbrlink: 4ae00516
 date: 2022-05-24 17:57:13
-categories: 
-- 博客
-- 踩坑
 ---
 
 # 起因

@@ -1,10 +1,13 @@
 ---
 title: 现代游戏引擎 - 如何构建游戏世界（三）
 image: /images/background/How-Build-Game-World.jpg
-tags: [游戏引擎, Game104]
-date: 2022-09-01 20:33:21
+tags:
+  - 游戏引擎
+  - Game104
 categories:
-- 游戏引擎
+  - 游戏引擎
+abbrlink: 4d443f2a
+date: 2022-09-01 20:33:21
 ---
 ## 前言
 

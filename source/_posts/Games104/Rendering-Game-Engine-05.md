@@ -1,10 +1,13 @@
 ---
 title: 现代游戏引擎 - 游戏渲染中光和材质的数学魔法（五）
 image: /images/background/Rendering-Game-Engine.jpg
-tags: [游戏引擎, Game104]
-date: 2022-09-05 22:40:37
+tags:
+  - 游戏引擎
+  - Game104
 categories:
-- 游戏引擎
+  - 游戏引擎
+abbrlink: 27ef4ad0
+date: 2022-09-05 22:40:37
 ---
 ## 渲染方程及挑战
 ### 
