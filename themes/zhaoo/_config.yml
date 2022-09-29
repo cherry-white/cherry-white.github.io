@@ -95,9 +95,9 @@ fab:
   enable: true
   always_show: false
 
-# Search
+# Search https://github.com/wzpan/hexo-generator-search
 search:
-  enable: false
+  enable: true
 
 # QR Code
 qrcode:
