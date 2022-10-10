@@ -173,31 +173,116 @@ $$i^2=j^2=k^2=ijk=-1$$
 ![任意轴Quaternion旋转](/images/article/Games104/08/Games104_08_38.png)
 
 ## 关节与蒙皮
+### Transform
+关节的Pose有三个维度：Orientation、Position和Scale
 
+#### Orientation
+![方向](/images/article/Games104/08/Games104_08_39.png)
 
+#### Position
+![定位](/images/article/Games104/08/Games104_08_40.png)
 
+#### Scale
+![比例](/images/article/Games104/08/Games104_08_41.png)
 
+合并起来形成了Affine Matrix
+![Transfrom矩阵](/images/article/Games104/08/Games104_08_42.png)
 
+### 骨骼动画 & 蒙皮
+骨骼动画中所有的骨骼变动都是基于局部坐标系（旋转时能够保证骨骼大小不变），也就是和父节点相关。
+所有骨骼的变动是逐步叠加的结果。骨骼动画需要存储model space下，关键帧root => joint的变换矩阵。
+![从局部空间到模型空间](/images/article/Games104/08/Games104_08_43.png)
 
+在处理骨骼蒙皮时，会记录皮肤Mesh顶点相对绑定骨骼的位置，这样皮肤就能跟随骨骼运动。
+在处理骨骼蒙皮时，只需要知道Mesh顶点在model space的坐标和绑定矩阵，就可以知道蒙皮顶点相对Joint的局部坐标。
+![蒙皮矩阵01](/images/article/Games104/08/Games104_08_44.png)
+![蒙皮矩阵02](/images/article/Games104/08/Games104_08_45.png)
 
+通常骨骼的数量很少，蒙皮顶点的数量很多，因此不可能每次计算蒙皮顶点时都计算骨骼的转化矩阵。在计算骨骼动画时，
+先计算好某一时刻的骨骼动画，再计算所有的蒙皮矩阵。在计算实际的顶点时，是在世界空间下处理，因此可以将这部分骨骼矩阵计算好，再处理蒙皮效果。
+![蒙皮矩阵调色板](/images/article/Games104/08/Games104_08_46.png)
 
+### Clip插值
+一个动画Clip是由一些关键帧组成的，关键帧之间由两个关键帧的数据插值计算，由此获得较为平滑的动作。
+对弈简单的差值，比如位置就可以直接进行差值，但上面提到的角度差值就相对麻烦。
+![简单插值](/images/article/Games104/08/Games104_08_47.png)
+
+对于角度来说，最直观的线性插值（q1 -> q2直线），但旋转需要保证半径不变，因此要对对线性插值结果标准化处理（NLERP）。
+缺点：角度变化不均匀，中间慢，两边慢。
+![旋转的四元数插值](/images/article/Games104/08/Games104_08_48.png)
+
+最短路径插值：从一个角度移动到另一个角度，对于每个维度来说都有两种变化方式，而符合人直观的插值是最短路径插值。
+通过四元数点乘的正负值；方向向量的叉乘正负值来处理旋转方向。
+![最短路径插值](/images/article/Games104/08/Games104_08_49.png)
+
+SLERP：先计算旋转角度，对角度进行差值计算位置。优点：变化均匀。
+缺点：计算量略高（反三角函数）；旋转角度很小时，计算结果不稳定。
+![SLERP](/images/article/Games104/08/Games104_08_50.png)
+
+混合处理：设定一个角度阈值，当夹角小于阈值时，使用NLERP;当角度大于阈值时，使用SLERP。
+![NLERP VS SLERP](/images/article/Games104/08/Games104_08_51.png)
+
+### 动画管线
+基础动画管线：根据时间插值计算当前帧的Pos => 计算蒙皮Mesh => GPU渲染。
+现代动画管线：大部分CPU计算放到GPU处理。
+![基础动画管线](/images/article/Games104/08/Games104_08_52.png)
 
 ## 动画技术压缩
+动画需要处理的数据很多，会占用大量的存储空间，若不就行压缩处理，难以在硬件设备上运行。
+![动画数据大小](/images/article/Games104/08/Games104_08_53.png)
 
+### 简单压缩
+如果存下所有节点每秒比如三十帧的数据，会导致数据量过大没法使用，所以必须进行压缩。
+第一步是进行DoF的压缩，我们可以发现，对大部分节点来说，其scale不怎么变化，所以可以直接去掉（除了脸部节点）；
+同时，节点的translate也不怎么动，只需要存储固定值（除了骨盆和脸部节点）。
+![自由度降低](/images/article/Games104/08/Games104_08_54.png)
 
+### 关键帧与插值曲线
+针对旋转，比较简单的方法是使用关键帧Key Frame进行插值，当插值误差小于一定阈值时就设为关键帧，
+不然就把这插值对应的GT帧加入关键帧再继续细分。因而关键帧的间隔不是固定的。
+![关键帧](/images/article/Games104/08/Games104_08_55.png)
 
+关键帧的结果虽然不错，但仍然是一条折线。所以又提出了Catmull-Rom Spline：在两帧P1P2之外分别再取P0P3，然后拟合这个曲线即可。
+![Catmull-Rom Spline](/images/article/Games104/08/Games104_08_56.png)
 
+### 数值精度
+![浮点量化](/images/article/Games104/08/Games104_08_57.png)
+对已知范围的浮点数映射到0~1之间，可以增加数据的精度。对于四元数可利用归一化的特性，只存储三个绝对值较小的数据，这三个值处于一定范围内。
+这样只需要2bit存储最大值的位置，其余每位15bit，共48bit。
+![四元数量化01](/images/article/Games104/08/Games104_08_58.png)
+![四元数量化02](/images/article/Games104/08/Games104_08_59.png)
 
+### Error
+压缩虽然好用，但会带来误差累积问题。所以需要检测误差是不是被控制在可接受范围内。
+最实际可用的误差是visual error视觉误差，但如果对比压缩前后每顶点的误差则计算量太大，所以实际中针对每一个节点joint进行估计：
+对节点估计两个互相垂直方向上的点，距离设置为offset（如果精度敏感则offset大一点，如果不敏感或小骨骼的话就offset小一点），
+这样只需要比较两个点在压缩前后的error即可
+![误差传播](/images/article/Games104/08/Games104_08_60.png)
 
-
+Error Compensation：在多帧误差累积后反向进行偏移来补偿。其问题就是这一帧和上一帧会很不连贯。
+![偏移补偿](/images/article/Games104/08/Games104_08_61.png)
 
 ## 动画技术流程
+### Mesh building
+![网状结构](/images/article/Games104/08/Games104_08_62.png)
 
+### Skeleton Binding
+DCC软件通常自带预制骨架，美术可以手动将骨骼附加到指定到Mesh位置。
+![骨架图](/images/article/Games104/08/Games104_08_64.png)
 
+### Skinning
+![蒙皮](/images/article/Games104/08/Games104_08_63.png)
 
+### Animation Creation
+![动画创作](/images/article/Games104/08/Games104_08_65.png)
 
+### Exporting
+在DCC软件中完成动画资源制作后，需要将资源导出到游戏引擎中使用。这其中就有许多细节又要注意：
+* 尺寸单位一致性
+* 坐标系一致性
+* 是否附带位移曲线
 
-
+![导出](/images/article/Games104/08/Games104_08_66.png)
 
 [参考文章1](https://zhuanlan.zhihu.com/p/537220623)
 
