@@ -2,12 +2,13 @@
 title: 现代游戏引擎 - 高级动画技术：动画树、IK和表情动画（九）
 image: /images/background/Advanced-Animation-Technology.jpg
 mathjax: false
-date: 2022-10-13 20:47:12
 tags:
- - 游戏引擎
- - Game104
+  - 游戏引擎
+  - Game104
 categories:
- - 游戏引擎
+  - 游戏引擎
+abbrlink: 649819f1
+date: 2022-10-13 20:47:12
 ---
 ## 动画混合（Animation Blending）
 上一章节提到，我们的动画是由一个个Clip（动作）组成的。当我们正在播放一个Clip时，想要切换到另一个Clip，
