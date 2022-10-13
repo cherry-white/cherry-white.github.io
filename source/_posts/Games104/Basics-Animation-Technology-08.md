@@ -290,6 +290,6 @@ DCC软件通常自带预制骨架，美术可以手动将骨骼附加到指定�
 
 [课程视频1](https://www.bilibili.com/video/BV1jr4y1t7WR/?spm_id_from=333.788&vd_source=371bc0e94a8c97f991c4ac20af0b2d53)
 
-[课程视频1](https://www.bilibili.com/video/BV1fF411j7hA/?spm_id_from=333.788&vd_source=371bc0e94a8c97f991c4ac20af0b2d53)
+[课程视频2](https://www.bilibili.com/video/BV1fF411j7hA/?spm_id_from=333.788&vd_source=371bc0e94a8c97f991c4ac20af0b2d53)
 
 [课件PPT](https://cdn.boomingtech.com/games104_static/upload/GAMES104_Lecture%2008_Animation%20System%20-%20Basics%20of%20Animation%20Technology.pdf)
