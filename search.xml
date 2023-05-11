@@ -833,9 +833,20 @@
     
     
     <entry>
-      <title>归档</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>Me</p><p>Cherry White</p><p>喜欢动漫游戏</p><p>喜欢折腾各种东西</p><p>热爱编程的程序猿!</p><p>技术栈：</p><ul><li>Unity、C#</li><li>SpringBoot、Laravel</li><li>Linux、Docker、Jenkins</li><li>React、Vue、Angular、Ts</li><li>Mysql、MybatisPlus</li></ul><p>个人经历</p><p>2022.04 - 至今：</p><p>QQ飞车手游项目组 游戏前端开发</p><p>2020.12-2022.04：</p><p>金宝贝早教 前端开发</p><p>毕业于广州大学华软软件学院</p><p>联系方式</p><ul><li>E-Mail：<a href="mailto:cherry.white@qq.com">cherry.white@qq.com</a></li><li>WeChat：wxid_ptoe55mpaqri21</li><li>QQ：1789139001</li><li>Github: <a href="https://github.com/cherry-white">Github</a> 、 <a href="https://gitee.com/zj1789139001">Gitee</a></li><li>Website: <a href="https://cherry-white.github.io/">https://cherry-white.github.io/</a></li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -844,9 +855,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>归档</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -866,9 +877,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>动漫</title>
+      <link href="/galleries/%E5%8A%A8%E6%BC%AB/index.html"/>
+      <url>/galleries/%E5%8A%A8%E6%BC%AB/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -877,11 +888,11 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<p>Me</p><p>Cherry White</p><p>喜欢动漫游戏</p><p>喜欢折腾各种东西</p><p>热爱编程的程序猿!</p><p>技术栈：</p><ul><li>Unity、C#</li><li>SpringBoot、Laravel</li><li>Linux、Docker、Jenkins</li><li>React、Vue、Angular、Ts</li><li>Mysql、MybatisPlus</li></ul><p>个人经历</p><p>2022.04 - 至今：</p><p>QQ飞车手游项目组 游戏前端开发</p><p>2020.12-2022.04：</p><p>金宝贝早教 前端开发</p><p>毕业于广州大学华软软件学院</p><p>联系方式</p><ul><li>E-Mail：<a href="mailto:cherry.white@qq.com">cherry.white@qq.com</a></li><li>WeChat：wxid_ptoe55mpaqri21</li><li>QQ：1789139001</li><li>Github: <a href="https://github.com/cherry-white">Github</a> 、 <a href="https://gitee.com/zj1789139001">Gitee</a></li><li>Website: <a href="https://cherry-white.github.io/">https://cherry-white.github.io/</a></li></ul>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -902,17 +913,6 @@
       <title>封面</title>
       <link href="/galleries/%E5%B0%81%E9%9D%A2/index.html"/>
       <url>/galleries/%E5%B0%81%E9%9D%A2/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>动漫</title>
-      <link href="/galleries/%E5%8A%A8%E6%BC%AB/index.html"/>
-      <url>/galleries/%E5%8A%A8%E6%BC%AB/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
