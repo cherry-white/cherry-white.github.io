@@ -860,17 +860,6 @@
     
     
     <entry>
-      <title>404 Not Found</title>
-      <link href="//404.html"/>
-      <url>//404.html</url>
-      
-        <content type="html"><![CDATA[<h1>    <div style="text-align: center;">        对不起，您所访问的页面不存在或者已删除。<br>        <a href="javascript:toRandomPost()">您可以点击此处，随机看看叭。</a>    </div></h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -887,6 +876,28 @@
       <url>/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>画廊</title>
+      <link href="/galleries/index.html"/>
+      <url>/galleries/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>404 Not Found</title>
+      <link href="//404.html"/>
+      <url>//404.html</url>
+      
+        <content type="html"><![CDATA[<h1>    <div style="text-align: center;">        对不起，您所访问的页面不存在或者已删除。<br>        <a href="javascript:toRandomPost()">您可以点击此处，随机看看叭。</a>    </div></h1>]]></content>
       
     </entry>
     
@@ -918,17 +929,6 @@
       <title>封面</title>
       <link href="/galleries/%E5%B0%81%E9%9D%A2/index.html"/>
       <url>/galleries/%E5%B0%81%E9%9D%A2/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>画廊</title>
-      <link href="/galleries/index.html"/>
-      <url>/galleries/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
