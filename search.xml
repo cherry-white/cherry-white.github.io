@@ -871,17 +871,6 @@
     
     
     <entry>
-      <title>归档</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -893,9 +882,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>归档</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -904,9 +893,9 @@
     
     
     <entry>
-      <title>画廊</title>
-      <link href="/galleries/index.html"/>
-      <url>/galleries/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -926,9 +915,9 @@
     
     
     <entry>
-      <title>动漫</title>
-      <link href="/galleries/%E5%8A%A8%E6%BC%AB/index.html"/>
-      <url>/galleries/%E5%8A%A8%E6%BC%AB/index.html</url>
+      <title>画廊</title>
+      <link href="/galleries/index.html"/>
+      <url>/galleries/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -940,6 +929,17 @@
       <title>封面</title>
       <link href="/galleries/%E5%B0%81%E9%9D%A2/index.html"/>
       <url>/galleries/%E5%B0%81%E9%9D%A2/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>动漫</title>
+      <link href="/galleries/%E5%8A%A8%E6%BC%AB/index.html"/>
+      <url>/galleries/%E5%8A%A8%E6%BC%AB/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
