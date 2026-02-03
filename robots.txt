@@ -1,0 +1,5 @@
+Sitemap: https://cherry-white.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
+Allow: /
