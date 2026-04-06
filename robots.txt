@@ -1,5 +1,8 @@
+# 网站地图
 Sitemap: https://cherry-white.github.io/sitemap.xml
+Sitemap: https://cherry-white.github.io/baidusitemap.xml
 
+# 允许所有搜索引擎
 User-agent: *
 Disallow:
 Allow: /
