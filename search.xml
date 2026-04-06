@@ -929,9 +929,20 @@
     
     
     <entry>
-      <title>归档</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="👋-Hi-I’m-Cherry-White"><a href="#👋-Hi-I’m-Cherry-White" class="headerlink" title="👋 Hi, I’m Cherry White"></a>👋 Hi, I’m Cherry White</h2><blockquote><p>热爱编程的程序猿，喜欢动漫游戏，热衷于折腾各种有趣的东西。目前从事游戏前端开发，未来希望向<strong>游戏客户端 AI 应用 + AIGC 工具链</strong>方向发展。</p><p>📖 <a href="/posts/game-client-ai-aigc-roadmap/">查看我的学习路线规划 →</a></p></blockquote><hr><h2 id="🛠️-技术栈"><a href="#🛠️-技术栈" class="headerlink" title="🛠️ 技术栈"></a>🛠️ 技术栈</h2><table><thead><tr><th>方向</th><th>技术</th></tr></thead><tbody><tr><td>游戏开发</td><td>Unity、C#</td></tr><tr><td>后端开发</td><td>SpringBoot、Laravel</td></tr><tr><td>前端开发</td><td>React、Vue、Angular、TypeScript</td></tr><tr><td>运维部署</td><td>Linux、Docker、Jenkins</td></tr><tr><td>数据库</td><td>MySQL、MyBatis Plus</td></tr></tbody></table><hr><h2 id="💼-个人经历"><a href="#💼-个人经历" class="headerlink" title="💼 个人经历"></a>💼 个人经历</h2><p><strong>2022.04 - 至今</strong><br>QQ飞车手游项目组 · 游戏前端开发</p><p><strong>2020.12 - 2022.04</strong><br>金宝贝早教 · 前端开发</p><p>🎓 毕业于广州大学华软软件学院</p><hr><h2 id="📬-联系方式"><a href="#📬-联系方式" class="headerlink" title="📬 联系方式"></a>📬 联系方式</h2><ul><li>🐧 QQ：<code>1789139001</code></li><li>📧 E-Mail：<a href="mailto:cherry.white@qq.com">cherry.white@qq.com</a></li><li>🐙 GitHub：<a href="https://github.com/cherry-white">cherry-white</a> · <a href="https://gitee.com/zj1789139001">Gitee</a></li><li>🌐 Website：<a href="https://cherry-white.github.io/">https://cherry-white.github.io/</a></li></ul><blockquote><p>💬 <strong>温馨提示</strong>：通过 QQ 或邮件联系时，请在消息开头注明来源（如：「来自博客」），方便我识别，谢谢！</p></blockquote>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -940,11 +951,11 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>归档</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
-        <content type="html"><![CDATA[<h2 id="👋-Hi-I’m-Cherry-White"><a href="#👋-Hi-I’m-Cherry-White" class="headerlink" title="👋 Hi, I’m Cherry White"></a>👋 Hi, I’m Cherry White</h2><blockquote><p>热爱编程的程序猿，喜欢动漫游戏，热衷于折腾各种有趣的东西。目前从事游戏前端开发，未来希望向<strong>游戏客户端 AI 应用 + AIGC 工具链</strong>方向发展。</p><p>📖 <a href="/posts/game-client-ai-aigc-roadmap/">查看我的学习路线规划 →</a></p></blockquote><hr><h2 id="🛠️-技术栈"><a href="#🛠️-技术栈" class="headerlink" title="🛠️ 技术栈"></a>🛠️ 技术栈</h2><table><thead><tr><th>方向</th><th>技术</th></tr></thead><tbody><tr><td>游戏开发</td><td>Unity、C#</td></tr><tr><td>后端开发</td><td>SpringBoot、Laravel</td></tr><tr><td>前端开发</td><td>React、Vue、Angular、TypeScript</td></tr><tr><td>运维部署</td><td>Linux、Docker、Jenkins</td></tr><tr><td>数据库</td><td>MySQL、MyBatis Plus</td></tr></tbody></table><hr><h2 id="💼-个人经历"><a href="#💼-个人经历" class="headerlink" title="💼 个人经历"></a>💼 个人经历</h2><p><strong>2022.04 - 至今</strong><br>QQ飞车手游项目组 · 游戏前端开发</p><p><strong>2020.12 - 2022.04</strong><br>金宝贝早教 · 前端开发</p><p>🎓 毕业于广州大学华软软件学院</p><hr><h2 id="📬-联系方式"><a href="#📬-联系方式" class="headerlink" title="📬 联系方式"></a>📬 联系方式</h2><ul><li>🐧 QQ：<code>1789139001</code></li><li>📧 E-Mail：<a href="mailto:cherry.white@qq.com">cherry.white@qq.com</a></li><li>🐙 GitHub：<a href="https://github.com/cherry-white">cherry-white</a> · <a href="https://gitee.com/zj1789139001">Gitee</a></li><li>🌐 Website：<a href="https://cherry-white.github.io/">https://cherry-white.github.io/</a></li></ul><blockquote><p>💬 <strong>温馨提示</strong>：通过 QQ 或邮件联系时，请在消息开头注明来源（如：「来自博客」），方便我识别，谢谢！</p></blockquote>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -962,9 +973,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -987,17 +998,6 @@
       <title>动漫</title>
       <link href="/galleries/%E5%8A%A8%E6%BC%AB/index.html"/>
       <url>/galleries/%E5%8A%A8%E6%BC%AB/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
