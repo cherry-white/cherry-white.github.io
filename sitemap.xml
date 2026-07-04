@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/75abea48.html</loc>
+    <loc>https://cherry-white.github.io/posts/11880203.html</loc>
     
     <lastmod>2026-04-12</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/11880203.html</loc>
+    <loc>https://cherry-white.github.io/posts/75abea48.html</loc>
     
     <lastmod>2026-04-12</lastmod>
     
@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/e0c8e18d.html</loc>
-    
-    <lastmod>2026-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://cherry-white.github.io/posts/game-client-ai-aigc-roadmap.html</loc>
     
     <lastmod>2026-04-12</lastmod>
@@ -92,7 +83,16 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/galleries/index.html</loc>
+    <loc>https://cherry-white.github.io/posts/e0c8e18d.html</loc>
+    
+    <lastmod>2026-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/categories/index.html</loc>
     
     <lastmod>2026-04-05</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/categories/index.html</loc>
+    <loc>https://cherry-white.github.io/galleries/index.html</loc>
     
     <lastmod>2026-04-05</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/647e170e.html</loc>
+    <loc>https://cherry-white.github.io/posts/fd7746b4.html</loc>
     
     <lastmod>2026-04-05</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/fd7746b4.html</loc>
+    <loc>https://cherry-white.github.io/posts/647e170e.html</loc>
     
     <lastmod>2026-04-05</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/649819f1.html</loc>
+    <loc>https://cherry-white.github.io/posts/de5d97c9.html</loc>
     
     <lastmod>2026-04-05</lastmod>
     
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/posts/de5d97c9.html</loc>
+    <loc>https://cherry-white.github.io/posts/649819f1.html</loc>
     
     <lastmod>2026-04-05</lastmod>
     
@@ -380,6 +380,13 @@
 
   
   <url>
+    <loc>https://cherry-white.github.io/tags/gpu/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cherry-white.github.io/tags/%E7%B4%A2%E5%BC%95/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -388,27 +395,6 @@
   
   <url>
     <loc>https://cherry-white.github.io/tags/%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/tags/git/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/tags/ssh/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/tags/gpu/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -443,14 +429,14 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</loc>
+    <loc>https://cherry-white.github.io/tags/git/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/tags/games104/</loc>
+    <loc>https://cherry-white.github.io/tags/ssh/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -465,6 +451,20 @@
   
   <url>
     <loc>https://cherry-white.github.io/tags/%E4%B8%8B%E8%BD%BD/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/tags/games104/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -513,6 +513,20 @@
   </url>
   
   <url>
+    <loc>https://cherry-white.github.io/tags/jenkins/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/tags/ci-cd/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cherry-white.github.io/tags/unity/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -521,6 +535,20 @@
   
   <url>
     <loc>https://cherry-white.github.io/tags/unity-api/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/tags/hexo/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/tags/%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -547,52 +575,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://cherry-white.github.io/tags/hexo/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/tags/%E4%B8%BB%E9%A2%98/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/tags/jenkins/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/tags/ci-cd/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://cherry-white.github.io/categories/%E7%B4%A2%E5%BC%95/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherry-white.github.io/categories/%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cherry-white.github.io/categories/gpu/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/categories/%E7%B4%A2%E5%BC%95/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -606,13 +599,6 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/categories/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cherry-white.github.io/categories/gpu/%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -620,7 +606,28 @@
   </url>
   
   <url>
+    <loc>https://cherry-white.github.io/categories/%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cherry-white.github.io/categories/%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/categories/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/categories/%E5%AE%89%E8%A3%85/%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -641,13 +648,6 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/categories/%E5%AE%89%E8%A3%85/%E4%B8%8B%E8%BD%BD/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cherry-white.github.io/categories/unity/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -662,13 +662,6 @@
   </url>
   
   <url>
-    <loc>https://cherry-white.github.io/categories/%E5%8D%9A%E5%AE%A2/%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cherry-white.github.io/categories/%E5%8D%9A%E5%AE%A2/%E8%B8%A9%E5%9D%91/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -677,6 +670,13 @@
   
   <url>
     <loc>https://cherry-white.github.io/categories/unity/unity-api/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherry-white.github.io/categories/%E5%8D%9A%E5%AE%A2/%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
